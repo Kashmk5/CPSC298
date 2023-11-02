@@ -1,8 +1,8 @@
+#include "musical notes.h"
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-#include "musical_notes.h"
-
+#include <string>
 
 // Constants
 const double k_dFrequencyRef = 16.35; // Reference Frequency (C0)
@@ -11,7 +11,7 @@ const double k_dCmPerMeter = 100.0; // Conversion factor from meters to centimet
 
 // Function to compute frequency using the given formula
 double computeFrequency(int k, int v) {
-    return k_dFrequencyRef * pow(2.0, v + k / 12.0);
+    return k_dFrequencyRef * std::pow(2.0, v + k / 12.0);
 }
 
 // Function to compute wavelength using the given formula
