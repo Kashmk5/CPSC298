@@ -1,7 +1,8 @@
-cpp
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include "musical_notes.h"
+
 
 // Constants
 const double k_dFrequencyRef = 16.35; // Reference Frequency (C0)
